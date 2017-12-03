@@ -25,8 +25,6 @@ static int  (int low, int high)
 		fclose (f);
 	}
 
-//	cerr << seed_time << ";" << seed_count << endl;
-
 	srand(seed_time);
 	while (--seed_count > 0) rand();
 	double v = (double) rand();
@@ -50,7 +48,6 @@ int main (int argc, char *argv[])
 	default :
 		break;
 	}
-//	cerr &lt;&lt; low &lt;&lt; &quot;, &quot; &lt;&lt; high &lt;&lt; endl;
 	cout << random (low, high) << endl;
 	return 0;
 }
